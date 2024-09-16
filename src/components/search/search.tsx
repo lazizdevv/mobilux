@@ -1,5 +1,5 @@
 "use client";
-import { SearchIcon } from "lucide-react";
+import { SearchIcon, ShieldAlert } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -41,19 +41,24 @@ export const Search = () => {
         <Button className="rounded-l-none w-28 h-full">Filter</Button>
       </div>
 
-      <div className="absolute z-50 w-full">
+      <div className="absolute top-11 z-50 w-full">
         {searchTerm.length === 0 ? (
           ""
         ) : products.length > 0 ? (
           <div className="mt-5 bg-white overflow-y-scroll h-72 lg:h-[500px] z-2 grid grid-cols-1 p-3 md:p-5 w-full border rounded-lg shadow-md shadow-primary bg-special max-w-screen-xl">
             <div className="grid grid-cols-1 md:grid-cols-2">
-            {products.map((product) => (
-              <SearchCard key={product.id} {...product} />
-            ))}
+              {products.map((product) => (
+                <SearchCard key={product.id} {...product} />
+              ))}
             </div>
           </div>
         ) : (
-          <p>No products found.</p>
+          <div className="w-full bg-white border border-primary shadow-sm shadow-primary rounded-lg p-5 text-center mt-4">
+            <span>
+              <ShieldAlert className="mx-auto" />
+            </span>
+            <p>Maxsulot topilmadi.</p>
+          </div>
         )}
       </div>
     </div>

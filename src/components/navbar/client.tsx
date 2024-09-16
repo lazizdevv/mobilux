@@ -1,4 +1,3 @@
-// components/HamburgerMenu.tsx
 "use client";
 
 import { Aside } from "@/layouts/aside";
@@ -39,7 +38,7 @@ const HamburgerMenu = () => {
         type="button"
         className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white transition-all rounded-lg lg:hidden bg-primary hover:bg-primary/80"
       >
-        <Menu/>
+        <Menu />
       </button>
 
       {/* Menyu ochilganda */}
@@ -56,11 +55,9 @@ const HamburgerMenu = () => {
                 type="button"
                 className="inline-flex items-center p-2 w-8 h-8 justify-center text-white rounded-lg bg-red-500 hover:bg-red-700"
               >
-                <X/>
+                <X />
               </button>
             </div>
-
-            {/* Menyu tarkibi (Aside komponenti) */}
             <Aside />
           </div>
         </button>

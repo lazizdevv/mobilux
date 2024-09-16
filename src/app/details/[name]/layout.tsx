@@ -1,13 +1,11 @@
-// app/special/layout.tsx
 import { ReactNode } from "react";
 
 const SpecialLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="">
-      <header>Special Header</header>
-      <nav>Special Navigation</nav>
+      <header></header>
+      <nav></nav>
       <main>{children}</main>
-      <footer>Special Footer</footer>
     </div>
   );
 };

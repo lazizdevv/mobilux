@@ -7,7 +7,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <>
-      <div  className="flex flex-wrap gap-5 justify-between  py-8">
+      <div className="flex flex-wrap gap-5 justify-between  py-8">
         <div className="">
           <Link href={"/"}>
             <Logo />
@@ -18,8 +18,8 @@ export const Footer = () => {
             <p>Barcha huquqlar kafolatlangan</p>
 
             <div className="flex gap-3 pt-4">
-              <GooglePlayIcon/>
-              <AppStoreIcon/>
+              <GooglePlayIcon />
+              <AppStoreIcon />
             </div>
           </div>
         </div>

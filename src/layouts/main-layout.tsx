@@ -22,7 +22,9 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
             <Header />
           </header>
 
-          <main style={{paddingBottom:"20px"}} className="bg-secondary">{children}</main>
+          <main style={{ paddingBottom: "20px" }} className="bg-secondary">
+            {children}
+          </main>
 
           <footer>
             <Footer />

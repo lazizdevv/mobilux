@@ -3,23 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { CarIcon, ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 
-export const ProductCard = ({
-  img,
-  title,
-  ram,
-  color,
-  memory,
-  display,
-  core,
-  geForce,
-  price,
-  weight,
-  id,
-  brand,
-  rame,
-}: productTypes) => {
+export const ProductCard = ({ img, title, price, id }: productTypes) => {
   return (
     <>
       <Link href={`/product-detail/${id}`}>

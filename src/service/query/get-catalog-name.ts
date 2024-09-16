@@ -3,9 +3,9 @@
 import { productTypes } from "../types/products";
 const url = process.env.APP_URL;
 
-
-
-export const getCatalogByName = async (name: string): Promise<productTypes[]> => {
+export const getCatalogByName = async (
+  name: string
+): Promise<productTypes[]> => {
   try {
     const res = await fetch(`${url}/${name}`);
     const data = await res.json();

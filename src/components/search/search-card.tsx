@@ -3,21 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const SearchCard = ({
-  img,
-  title,
-  ram,
-  color,
-  memory,
-  display,
-  core,
-  geForce,
-  price,
-  weight,
-  id,
-  brand,
-  rame,
-}: productTypes) => {
+export const SearchCard = ({ img, title, id }: productTypes) => {
   return (
     <>
       <Link href={`/product-detail/${id}`}>

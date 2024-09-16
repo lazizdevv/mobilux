@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/navbar/navbar";
 import { ProductCard } from "@/components/product-card/product-card";
 import { getCatalogByName } from "@/service/query/get-catalog-name";
 

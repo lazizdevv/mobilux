@@ -1,4 +1,4 @@
-"use server"
+"use server";
 export async function fetchProducts(searchTerm: string) {
   const url = process.env.APP_URL;
 

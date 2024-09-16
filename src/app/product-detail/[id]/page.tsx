@@ -1,24 +1,16 @@
 import { DetailCard } from "@/components/product-detail-card/detail-card";
 import { getProductById } from "@/service/query/get-all";
 
-const ProductDetail = async ({params}:any) => {
- 
-  
-  const {id} = params
-  
-  console.log(id);
-const product = await getProductById(id)
+const ProductDetail = async ({ params }: any) => {
+  const { id } = params;
 
-console.log(product);
-
- 
+  const product = await getProductById(id);
 
   return (
     <div className="">
-
-      {product.map((prod)=> (
+      {product.map((prod) => (
         <>
-        <DetailCard key={prod.id} {...prod} />
+          <DetailCard key={prod.id} {...prod} />
         </>
       ))}
     </div>

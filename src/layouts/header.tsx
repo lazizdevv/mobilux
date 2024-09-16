@@ -1,7 +1,7 @@
 import { Logo } from "@/assets/svgs/Logo";
 import HamburgerMenu from "@/components/navbar/client";
 import { Search } from "@/components/search/search";
-import { Loader, Menu, User, UserCircleIcon } from "lucide-react";
+import { Loader, UserCircleIcon } from "lucide-react";
 import Link from "next/link";
 import React, { Suspense } from "react";
 
@@ -10,7 +10,6 @@ export const Header = () => {
     <>
       <div
         style={{
-          
           gap: "20px",
         }}
         className="flex p-3 md:px-5 md:py-6 flex-wrap justify-between items-center gap-6 w-full bg-white border-b"
@@ -33,10 +32,7 @@ export const Header = () => {
           <Search />
         </div>
 
-        <div
-          
-          className="justify-between w-fit p-3 cursor-pointer border-black flex gap-3"
-        >
+        <div className="justify-between w-fit p-3 cursor-pointer border-black flex gap-3">
           <h1 className="mr-5">Kirish</h1>
           <div className="">
             <p className="w-4 h-4">

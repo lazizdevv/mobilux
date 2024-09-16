@@ -23,16 +23,20 @@ export default async function Home() {
 
         <div className="">
           <div className="flex items-center gap-5">
-            <span><ShoppingBag  color="#1FBA4A" /> </span>
-            <h1 className="my-6 text-[rgb(10,_10,_10)] font-lato text-[32px] font-bold leading-[36px] tracking-[0%] text-left">Yangi mahsulotlar</h1>
+            <span>
+              <ShoppingBag color="#1FBA4A" />{" "}
+            </span>
+            <h1 className="my-6 text-[rgb(10,_10,_10)] font-lato text-[32px] font-bold leading-[36px] tracking-[0%] text-left">
+              Yangi mahsulotlar
+            </h1>
           </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
-          {data?.map((item) => (
-            <div className="" key={item.id}>
-              <ProductCard key={item.id} {...item} />
-            </div>
-          ))}
-        </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+            {data?.map((item) => (
+              <div className="" key={item.id}>
+                <ProductCard key={item.id} {...item} />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="">

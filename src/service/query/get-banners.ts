@@ -3,7 +3,6 @@
 import { productTypes } from "../types/products";
 const url = process.env.APP_URL;
 
-
 export const getBanners = async (): Promise<productTypes[]> => {
   try {
     const res = await fetch(`${url}/banners`);

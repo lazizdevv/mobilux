@@ -84,11 +84,16 @@ export const DetailCard = ({
 
       <div className="bg-white shadow-sm border">
         <div className="py-8 px-6 space-y-8">
-          <h1 className="text-[rgb(0,_0,_0)] font-lato text-lg md:text-[24px] font-extrabold leading-[29px] tracking-[9.5%] text-left">Основные характеристики</h1>
+          <h1 className="text-[rgb(0,_0,_0)] font-lato text-lg md:text-[24px] font-extrabold leading-[29px] tracking-[9.5%] text-left">
+            Основные характеристики
+          </h1>
           <ul className="text-[rgb(128,_128,_128)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
             {brand ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96">Бренд</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{brand}</p>
+                <p className="w-52 md:w-96">Бренд</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {brand}
+                </p>
               </li>
             ) : (
               ""
@@ -97,7 +102,9 @@ export const DetailCard = ({
             {memory || rame ? (
               <li className="flex p-2 border border-dashed">
                 <p className="w-52 md:w-96">Объем встроенной памяти</p>{" "}
-                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{memory || rame}</p>
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {memory || rame}
+                </p>
               </li>
             ) : (
               ""
@@ -105,7 +112,10 @@ export const DetailCard = ({
 
             {core ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96"> Процессор</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{core}</p>
+                <p className="w-52 md:w-96"> Процессор</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {core}
+                </p>
               </li>
             ) : (
               ""
@@ -113,7 +123,10 @@ export const DetailCard = ({
 
             {details ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96">Диагональ</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{details?.diagonal}</p>
+                <p className="w-52 md:w-96">Диагональ</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {details?.diagonal}
+                </p>
               </li>
             ) : (
               ""
@@ -122,7 +135,9 @@ export const DetailCard = ({
             {display || details ? (
               <li className="flex p-2 border border-dashed">
                 <p className="w-52 md:w-96">Тип дисплея</p>{" "}
-                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{display || details?.display}</p>
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {display || details?.display}
+                </p>
               </li>
             ) : (
               ""
@@ -130,7 +145,10 @@ export const DetailCard = ({
 
             {ram ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96">Оперативная память</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{ram}</p>
+                <p className="w-52 md:w-96">Оперативная память</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {ram}
+                </p>
               </li>
             ) : (
               ""
@@ -139,7 +157,9 @@ export const DetailCard = ({
             {weight || details ? (
               <li className="flex p-2 border border-dashed">
                 <p className="w-52 md:w-96">Вес </p>
-                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{weight || details.weight}</p>
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {weight || details.weight}
+                </p>
               </li>
             ) : (
               ""
@@ -147,7 +167,10 @@ export const DetailCard = ({
 
             {geForce ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96">Видеокарта</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{geForce}</p>
+                <p className="w-52 md:w-96">Видеокарта</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {geForce}
+                </p>
               </li>
             ) : (
               ""
@@ -155,7 +178,10 @@ export const DetailCard = ({
 
             {color ? (
               <li className="flex p-2 border border-dashed">
-                <p className="w-52 md:w-96">Цвет</p> <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{color}</p>
+                <p className="w-52 md:w-96">Цвет</p>{" "}
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {color}
+                </p>
               </li>
             ) : (
               ""
@@ -164,17 +190,19 @@ export const DetailCard = ({
             {details ? (
               <li className="flex p-2 border border-dashed">
                 <p className="w-52 md:w-96">Количество ядер</p>{" "}
-                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">{details?.frequency}</p>
+                <p className="text-[rgb(0,_0,_0)] font-lato text-[14px] font-medium leading-[20px] tracking-[9.5%] text-left">
+                  {details?.frequency}
+                </p>
               </li>
             ) : (
               ""
             )}
-
           </ul>
 
-          <h1 className="text-primary font-lato text-[14px] font-bold leading-[17px] tracking-[9.5%] text-left">Все характеристики</h1>
+          <h1 className="text-primary font-lato text-[14px] font-bold leading-[17px] tracking-[9.5%] text-left">
+            Все характеристики
+          </h1>
         </div>
-        <div className=""></div>
       </div>
     </>
   );
