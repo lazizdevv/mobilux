@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       container: {
         padding: "20px",

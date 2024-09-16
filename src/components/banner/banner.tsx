@@ -31,7 +31,7 @@ export const Banner: React.FC<BannerProps> = ({ banners }) => {
             <CarouselItem key={item.id}>
               <div className="">
                 <Image
-                  className="h-[226px]"
+                  className="sm:h-[226px]"
                   src={item.img}
                   alt="dd"
                   layout="responsive"

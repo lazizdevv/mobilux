@@ -12,7 +12,7 @@ export const Aside = async () => {
             <>
               <Link className="" key={catalogs.id} href={`/details/${catalogs.name}`}>
                 <div style={{padding:"10px", paddingBottom:"10px"}} className="text-[rgb(13,_17,_54)] font-lato text-[14px] font-normal rounded-lg leading-[22.5px] tracking-[0%] text-left hover:bg-primary hover:text-white">
-                  <strong>{catalogs.text}</strong>
+                  <strong className="hover:underline">{catalogs.text}</strong>
                 </div>
               </Link>
             </>
