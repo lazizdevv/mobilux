@@ -11,7 +11,7 @@ export default async function Home() {
   const phones = (await getPhones()).slice(0, 8);
   const banner = await getBanners();
   return (
-    <div className="flex border border-primary">
+    <div className="flex">
       <div className="w-64 p-4 bg-white hidden md:block">
         <Aside />
       </div>
@@ -26,7 +26,7 @@ export default async function Home() {
             <span><ShoppingBag  color="#1FBA4A" /> </span>
             <h1 className="my-6 text-[rgb(10,_10,_10)] font-lato text-[32px] font-bold leading-[36px] tracking-[0%] text-left">Yangi mahsulotlar</h1>
           </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
           {data?.map((item) => (
             <div className="" key={item.id}>
               <ProductCard key={item.id} {...item} />
@@ -44,7 +44,7 @@ export default async function Home() {
               Ommabop mahsulotlar
             </h1>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
             {phones?.map((item) => (
               <div className="" key={item.id}>
                 <ProductCard key={item.id} {...item} />

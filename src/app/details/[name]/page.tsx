@@ -9,7 +9,7 @@ const CatalogSingle = async ({ params }: any) => {
 
   return (
     <div className="container">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-5">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 justify-center">
         {product.map((catalog) => (
           <>
             <ProductCard key={catalog.id} {...catalog} />

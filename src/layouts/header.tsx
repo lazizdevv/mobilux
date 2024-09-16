@@ -13,7 +13,7 @@ export const Header = () => {
           
           gap: "20px",
         }}
-        className="flex p-3 md:px-5 md:py-6 flex-wrap justify-between items-center gap-6 border-2 w-full bg-white shadow-md"
+        className="flex p-3 md:px-5 md:py-6 flex-wrap justify-between items-center gap-6 w-full bg-white border-b"
       >
         <Link href={"/"} className="cursor-pointer">
           <Logo />
@@ -29,13 +29,13 @@ export const Header = () => {
           <HamburgerMenu />
         </Suspense>
 
-        <div className="max-w-[930px] w-full border-2 ml-10">
+        <div className="max-w-[930px] w-full ml-10">
           <Search />
         </div>
 
         <div
-          style={{ gap: "15px" }}
-          className="justify-between w-fit border p-3 cursor-pointer border-black hidden md:flex"
+          
+          className="justify-between w-fit p-3 cursor-pointer border-black flex gap-3"
         >
           <h1 className="mr-5">Kirish</h1>
           <div className="">

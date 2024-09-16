@@ -25,11 +25,11 @@ export const DetailCard = ({
 }: productTypes) => {
   return (
     <>
-      <div className="flex flex-wrap md:flex-nowrap w-full bg-white border-primary border">
+      <div className="flex flex-wrap md:flex-nowrap w-full bg-white">
         <div className="w-full p-5 md:p-16 relative">
           <Image
             src={img}
-            className="border border-primary mt-10 md:mt-0"
+            className="border-dashed border mt-10 md:mt-0"
             alt=""
             objectFit="cover"
             width={480}
