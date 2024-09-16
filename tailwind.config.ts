@@ -13,7 +13,7 @@ const config: Config = {
         lato: ["Lato", "sans-serif"],
       },
       container: {
-        padding: "50px",
+        padding: "20px",
         center: true,
         screens: {
           xl: "1440px",

@@ -14,7 +14,7 @@ console.log(product);
  
 
   return (
-    <div className="container">
+    <div className="">
 
       {product.map((prod)=> (
         <>

@@ -7,12 +7,12 @@ export const Aside = async () => {
   return (
     <>
       <div className="w-20 md:w-full">
-        <div style={{gap:"35px"}} className="flex flex-col">
+        <div style={{gap:"20px"}} className="flex flex-col">
           {catalog.map((catalogs) => (
             <>
-              <Link key={catalogs.id} href={`/details/${catalogs.name}`}>
-                <div className="text-[rgb(13,_17,_54)] font-lato text-[14px] font-normal leading-[22.5px] tracking-[0%] text-left">
-                  <strong className="hover:underline">{catalogs.text}</strong>
+              <Link className="" key={catalogs.id} href={`/details/${catalogs.name}`}>
+                <div style={{padding:"10px", paddingBottom:"10px"}} className="text-[rgb(13,_17,_54)] font-lato text-[14px] font-normal rounded-lg leading-[22.5px] tracking-[0%] text-left hover:bg-primary hover:text-white">
+                  <strong>{catalogs.text}</strong>
                 </div>
               </Link>
             </>

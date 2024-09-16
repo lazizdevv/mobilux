@@ -14,4 +14,11 @@ export interface productTypes {
   text: string;
   name: string;
   id: number;
+  details: {
+    display?: string | null;
+    frequency?: string;
+    weight?: string;
+    security?: string;
+    diagonal?: string;
+  };
 }

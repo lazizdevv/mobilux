@@ -10,17 +10,17 @@ export default async function Home() {
   const phones = (await getPhones()).slice(0,8);
   const banner = await getBanners();
   return (
-    <div className="flex">
-     <div className="w-64 p-4 bg-white">
+    <div className="flex border border-primary">
+     <div className="w-64 p-4 bg-white hidden md:block">
       <Aside/>
      </div>
-      <div className="w-fit max-w-[1086px] pl-6 pt-6">
+      <div className="w-fit max-w-[1086px] md:pl-6 pt-6">
         <div className=""></div>
         <div className="">
           <Banner banners={banner} />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {data?.map((item) => (
             <div className="" key={item.id}>
               <ProductCard key={item.id} {...item} />
@@ -28,7 +28,7 @@ export default async function Home() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {phones?.map((item) => (
             <div className="" key={item.id}>
               <ProductCard key={item.id} {...item} />
