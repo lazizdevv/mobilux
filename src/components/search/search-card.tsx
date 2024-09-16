@@ -33,14 +33,6 @@ export const SearchCard = ({
           <h1 className="text-[rgb(10,_10,_10)] font-[Poppins] text-[14px] font-normal leading-[20px] tracking-[0%] text-left line-clamp-2 w-60">
             {title}
           </h1>
-          <p className="text-[rgb(10,_10,_10)] font-[Poppins] text-[14px] font-normal leading-[20px] tracking-[0%] text-left line-clamp-2">{`${
-            display ? display : ""
-          } ${ram ? ram : ""} ${rame ? rame : ""} / ${memory ? memory : ""} ${
-            color ? color : ""
-          }`}</p>
-          <strong className="text-[rgb(10,_10,_10)] font-[Lato] text-[18px] font-extrabold leading-[24px] tracking-[0%] text-left">
-            {`${price} so'm`}
-          </strong>
         </div>
       </Link>
     </>

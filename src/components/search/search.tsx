@@ -46,9 +46,11 @@ export const Search = () => {
           ""
         ) : products.length > 0 ? (
           <div className="mt-5 bg-white overflow-y-scroll h-72 lg:h-[500px] z-2 grid grid-cols-1 p-3 md:p-5 w-full border rounded-lg shadow-md shadow-primary bg-special max-w-screen-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2">
             {products.map((product) => (
               <SearchCard key={product.id} {...product} />
             ))}
+            </div>
           </div>
         ) : (
           <p>No products found.</p>
